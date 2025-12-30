@@ -1,0 +1,557 @@
+
+> loganalysisthesisgen@0.0.0 dev
+> vite
+
+Port 3000 is in use, trying another one...
+
+  VITE v6.4.1  ready in 85 ms
+
+  ➜  Local:   http://localhost:3001/
+  ➜  Network: http://192.168.6.128:3001/
+  ➜  press h + enter to show help
+6:16:54 PM [vite] Internal server error: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter2.tsx: Unexpected token, expected "}" (29:66)
+
+  27 |          </p>
+  28 |          <ul className="list-disc pl-12 mb-4 space-y-1 font-song">
+> 29 |             <li><strong>结构化：</strong> 将原本杂乱的日志文本转化为 `{ "timestamp": "...", "level": "INFO", "message": "..." }` 的键值对形式，便于程序解析。</li>
+     |                                                                   ^
+  30 |             <li><strong>兼容性：</strong> Elasticsearch 原生支持 JSON 文档的索引，无需额外的格式转换开销。</li>
+  31 |          </ul>
+  32 |
+  Plugin: vite:react-babel
+  File: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter2.tsx:29:66
+  27 |           </p>
+  28 |           <ul className="list-disc pl-12 mb-4 space-y-1 font-song">
+  29 |              <li><strong>结构化：</strong> 将原本杂乱的日志文本转化为 `{ "timestamp": "...", "level": "INFO", "message": "..." }` 的键值对形式，便于程序解析。</li>
+     |                                                                    ^
+  30 |              <li><strong>兼容性：</strong> Elasticsearch 原生支持 JSON 文档的索引，无需额外的格式转换开销。</li>
+  31 |           </ul>
+      at constructor (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.unexpected (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6644:16)
+      at TypeScriptParserMixin.expect (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6924:12)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4666:10)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4740:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4727:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4727:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4727:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4778:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4788:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10895:21)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9828:39
+      at TypeScriptParserMixin.tryParse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9828:18)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10864:39
+      at TypeScriptParserMixin.allowInAnd (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12500:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10864:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12567:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11747:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11395:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9839:20)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12167:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12149:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11759:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11395:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10945:23)
+6:16:54 PM [vite] (client) Pre-transform error: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter2.tsx: Unexpected token, expected "}" (29:66)
+
+  27 |          </p>
+  28 |          <ul className="list-disc pl-12 mb-4 space-y-1 font-song">
+> 29 |             <li><strong>结构化：</strong> 将原本杂乱的日志文本转化为 `{ "timestamp": "...", "level": "INFO", "message": "..." }` 的键值对形式，便于程序解析。</li>
+     |                                                                   ^
+  30 |             <li><strong>兼容性：</strong> Elasticsearch 原生支持 JSON 文档的索引，无需额外的格式转换开销。</li>
+  31 |          </ul>
+  32 |
+  Plugin: vite:react-babel
+  File: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter2.tsx:29:66
+  27 |           </p>
+  28 |           <ul className="list-disc pl-12 mb-4 space-y-1 font-song">
+  29 |              <li><strong>结构化：</strong> 将原本杂乱的日志文本转化为 `{ "timestamp": "...", "level": "INFO", "message": "..." }` 的键值对形式，便于程序解析。</li>
+     |                                                                    ^
+  30 |              <li><strong>兼容性：</strong> Elasticsearch 原生支持 JSON 文档的索引，无需额外的格式转换开销。</li>
+  31 |           </ul>
+6:16:54 PM [vite] (client) ✨ new dependencies optimized: react-dom/client, lucide-react, html2canvas, recharts
+6:16:54 PM [vite] (client) ✨ optimized dependencies changed. reloading
+6:16:54 PM [vite] Internal server error: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter2.tsx: Unexpected token, expected "}" (29:66)
+
+  27 |          </p>
+  28 |          <ul className="list-disc pl-12 mb-4 space-y-1 font-song">
+> 29 |             <li><strong>结构化：</strong> 将原本杂乱的日志文本转化为 `{ "timestamp": "...", "level": "INFO", "message": "..." }` 的键值对形式，便于程序解析。</li>
+     |                                                                   ^
+  30 |             <li><strong>兼容性：</strong> Elasticsearch 原生支持 JSON 文档的索引，无需额外的格式转换开销。</li>
+  31 |          </ul>
+  32 |
+  Plugin: vite:react-babel
+  File: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter2.tsx:29:66
+  27 |           </p>
+  28 |           <ul className="list-disc pl-12 mb-4 space-y-1 font-song">
+  29 |              <li><strong>结构化：</strong> 将原本杂乱的日志文本转化为 `{ "timestamp": "...", "level": "INFO", "message": "..." }` 的键值对形式，便于程序解析。</li>
+     |                                                                    ^
+  30 |              <li><strong>兼容性：</strong> Elasticsearch 原生支持 JSON 文档的索引，无需额外的格式转换开销。</li>
+  31 |           </ul>
+      at constructor (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.unexpected (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6644:16)
+      at TypeScriptParserMixin.expect (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6924:12)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4666:10)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4740:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4727:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4727:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4727:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4778:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4788:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10895:21)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9828:39
+      at TypeScriptParserMixin.tryParse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9828:18)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10864:39
+      at TypeScriptParserMixin.allowInAnd (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12500:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10864:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12567:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11747:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11395:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9839:20)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12167:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12149:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11759:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11395:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10945:23)
+6:16:54 PM [vite] (client) Pre-transform error: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter2.tsx: Unexpected token, expected "}" (29:66)
+
+  27 |          </p>
+  28 |          <ul className="list-disc pl-12 mb-4 space-y-1 font-song">
+> 29 |             <li><strong>结构化：</strong> 将原本杂乱的日志文本转化为 `{ "timestamp": "...", "level": "INFO", "message": "..." }` 的键值对形式，便于程序解析。</li>
+     |                                                                   ^
+  30 |             <li><strong>兼容性：</strong> Elasticsearch 原生支持 JSON 文档的索引，无需额外的格式转换开销。</li>
+  31 |          </ul>
+  32 |
+  Plugin: vite:react-babel
+  File: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter2.tsx:29:66
+  27 |           </p>
+  28 |           <ul className="list-disc pl-12 mb-4 space-y-1 font-song">
+  29 |              <li><strong>结构化：</strong> 将原本杂乱的日志文本转化为 `{ "timestamp": "...", "level": "INFO", "message": "..." }` 的键值对形式，便于程序解析。</li>
+     |                                                                    ^
+  30 |              <li><strong>兼容性：</strong> Elasticsearch 原生支持 JSON 文档的索引，无需额外的格式转换开销。</li>
+  31 |           </ul>
+6:23:07 PM [vite] (client) hmr update /components/ThesisChapter3.tsx
+6:23:33 PM [vite] (client) hmr update /components/ThesisChapter4_Part1.tsx
+6:23:58 PM [vite] (client) hmr update /components/ThesisChapter4_Part2.tsx
+6:27:32 PM [vite] (client) hmr update /components/ThesisChapter3.tsx
+6:27:58 PM [vite] (client) hmr update /components/ThesisChapter4_Part1.tsx
+6:28:25 PM [vite] (client) hmr update /components/ThesisChapter4_Part2.tsx
+6:28:25 PM [vite] Internal server error: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter4_Part2.tsx: Unterminated template. (160:3)
+
+  158 |   </div>
+  159 | );
+> 160 | ```
+      |    ^
+  161 |
+  Plugin: vite:react-babel
+  File: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter4_Part2.tsx:160:3
+  158|    </div>
+  159|  );
+  160|  ```
+     |     ^
+  161|  
+      at constructor (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6624:19)
+      at Object.unterminated (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5695:20)
+      at readStringContents (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5390:14)
+      at TypeScriptParserMixin.readTemplateToken (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6544:9)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6252:14)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4826:11)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10042:11)
+      at TypeScriptParserMixin.nextToken (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5807:10)
+      at TypeScriptParserMixin.next (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5717:10)
+      at TypeScriptParserMixin.parseTemplateElement (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11857:10)
+      at TypeScriptParserMixin.parseTemplate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11864:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11415:21)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9839:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10848:23)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10844:39
+      at TypeScriptParserMixin.allowInAnd (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12495:16)
+      at TypeScriptParserMixin.parseExpression (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10844:17)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12971:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseModuleItem (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:261:32)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:223:11)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:189:28
+6:28:25 PM [vite] Internal server error: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter4_Part2.tsx: Unterminated template. (160:3)
+
+  158 |   </div>
+  159 | );
+> 160 | ```
+      |    ^
+  161 |
+  Plugin: vite:react-babel
+  File: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter4_Part2.tsx:160:3
+  158|    </div>
+  159|  );
+  160|  ```
+     |     ^
+  161|  
+      at constructor (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6624:19)
+      at Object.unterminated (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5695:20)
+      at readStringContents (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5390:14)
+      at TypeScriptParserMixin.readTemplateToken (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6544:9)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6252:14)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4826:11)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10042:11)
+      at TypeScriptParserMixin.nextToken (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5807:10)
+      at TypeScriptParserMixin.next (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5717:10)
+      at TypeScriptParserMixin.parseTemplateElement (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11857:10)
+      at TypeScriptParserMixin.parseTemplate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11864:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11415:21)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9839:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10848:23)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10844:39
+      at TypeScriptParserMixin.allowInAnd (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12495:16)
+      at TypeScriptParserMixin.parseExpression (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10844:17)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12971:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseModuleItem (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:261:32)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:223:11)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:189:28
+6:28:25 PM [vite] Internal server error: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter4_Part2.tsx: Unterminated template. (160:3)
+
+  158 |   </div>
+  159 | );
+> 160 | ```
+      |    ^
+  161 |
+  Plugin: vite:react-babel
+  File: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter4_Part2.tsx:160:3
+  158|    </div>
+  159|  );
+  160|  ```
+     |     ^
+  161|  
+      at constructor (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6624:19)
+      at Object.unterminated (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5695:20)
+      at readStringContents (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5390:14)
+      at TypeScriptParserMixin.readTemplateToken (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6544:9)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6252:14)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4826:11)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10042:11)
+      at TypeScriptParserMixin.nextToken (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5807:10)
+      at TypeScriptParserMixin.next (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:5717:10)
+      at TypeScriptParserMixin.parseTemplateElement (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11857:10)
+      at TypeScriptParserMixin.parseTemplate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11864:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11415:21)
+      at TypeScriptParserMixin.parseExprAtom (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9839:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10848:23)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10844:39
+      at TypeScriptParserMixin.allowInAnd (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12495:16)
+      at TypeScriptParserMixin.parseExpression (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10844:17)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12971:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseModuleItem (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:261:32)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:223:11)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:189:28
+6:28:33 PM [vite] (client) hmr update /components/ThesisChapter4_Part2.tsx
+6:32:44 PM [vite] (client) hmr update /components/ThesisChapter5.tsx
+6:37:13 PM [vite] (client) hmr update /components/ThesisChapter5.tsx
+6:41:12 PM [vite] (client) hmr update /components/ThesisChapter3.tsx
+6:41:38 PM [vite] (client) hmr update /components/ThesisChapter4_Part1.tsx
+6:42:02 PM [vite] (client) hmr update /components/ThesisChapter4_Part2.tsx
+6:42:44 PM [vite] (client) hmr update /components/ThesisChapter5.tsx
+6:43:06 PM [vite] (client) hmr update /components/ThesisChapter1.tsx
+6:43:26 PM [vite] (client) hmr update /components/ThesisChapter2.tsx
+6:46:42 PM [vite] (client) hmr update /components/ThesisChapter3.tsx
+6:46:53 PM [vite] (client) hmr update /components/ThesisChapter2.tsx
+6:47:27 PM [vite] (client) hmr update /components/ThesisChapter5.tsx
+6:52:36 PM [vite] (client) hmr update /components/ThesisFrontMatter.tsx
+6:53:07 PM [vite] (client) hmr update /components/ThesisConclusion.tsx
+6:56:16 PM [vite] (client) hmr update /components/ThesisFrontMatter.tsx
+6:56:23 PM [vite] (client) hmr update /components/ThesisConclusion.tsx
+6:59:37 PM [vite] (client) hmr update /components/ThesisConclusion.tsx
+7:10:11 PM [vite] (client) page reload index.html
+7:13:07 PM [vite] (client) hmr update /App.tsx
+7:17:11 PM [vite] (client) hmr update /components/ThesisChapter1.tsx
+7:17:11 PM [vite] Internal server error: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter1.tsx: Missing semicolon. (14:121)
+
+  12 |         </p>
+  13 |         <p className="indent-8 mb-4">
+> 14 |             在一个典型的分布式系统中，一个业务请求可能会经过网关、认证服务、业务服务、数据库中间件等多个节点的处理。日志文件分散在不同的服务器节点和容器中。如果系统出现故障，传统的运维方式需要技术人员分别登录到各台服务器，使用 `grep`、`awk` 等命令逐个查看日志文件。这种方式存在以下显著痛点：
+     |                                                                                                                          ^
+  15 |         </p>
+  16 |         <p className="indent-8 mb-4">
+  17 |             1. <strong>效率低下：</strong> 当服务节点达到数十上百个时，逐一排查几乎是不可能的任务，严重影响故障恢复时间（MTTR）。在紧急故障发生时，每一分钟的延迟都可能带来巨大的经济损失。
+  Plugin: vite:react-babel
+  File: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter1.tsx:14:121
+  12 |          </p>
+  13 |          <p className="indent-8 mb-4">
+  14 |              在一个典型的分布式系统中，一个业务请求可能会经过网关、认证服务、业务服务、数据库中间件等多个节点的处理。日志文件分散在不同的服务器节点和容器中。如果系统出现故障，传统的运维方式需要技术人员分别登录到各台服务器，使用 `grep`、`awk` 等命令逐个查看日志文件。这种方式存在以下显著痛点：
+     |                                                                                                                           ^
+  15 |          </p>
+  16 |          <p className="indent-8 mb-4">
+      at constructor (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.semicolon (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6920:10)
+      at TypeScriptParserMixin.parseExpressionStatement (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13361:10)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12975:19)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseModuleItem (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:261:32)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:223:11)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:189:28
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:113:33
+      at step (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:287:14)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:223:11)
+7:17:11 PM [vite] Internal server error: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter1.tsx: Missing semicolon. (14:121)
+
+  12 |         </p>
+  13 |         <p className="indent-8 mb-4">
+> 14 |             在一个典型的分布式系统中，一个业务请求可能会经过网关、认证服务、业务服务、数据库中间件等多个节点的处理。日志文件分散在不同的服务器节点和容器中。如果系统出现故障，传统的运维方式需要技术人员分别登录到各台服务器，使用 `grep`、`awk` 等命令逐个查看日志文件。这种方式存在以下显著痛点：
+     |                                                                                                                          ^
+  15 |         </p>
+  16 |         <p className="indent-8 mb-4">
+  17 |             1. <strong>效率低下：</strong> 当服务节点达到数十上百个时，逐一排查几乎是不可能的任务，严重影响故障恢复时间（MTTR）。在紧急故障发生时，每一分钟的延迟都可能带来巨大的经济损失。
+  Plugin: vite:react-babel
+  File: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter1.tsx:14:121
+  12 |          </p>
+  13 |          <p className="indent-8 mb-4">
+  14 |              在一个典型的分布式系统中，一个业务请求可能会经过网关、认证服务、业务服务、数据库中间件等多个节点的处理。日志文件分散在不同的服务器节点和容器中。如果系统出现故障，传统的运维方式需要技术人员分别登录到各台服务器，使用 `grep`、`awk` 等命令逐个查看日志文件。这种方式存在以下显著痛点：
+     |                                                                                                                           ^
+  15 |          </p>
+  16 |          <p className="indent-8 mb-4">
+      at constructor (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.semicolon (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6920:10)
+      at TypeScriptParserMixin.parseExpressionStatement (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13361:10)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12975:19)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseModuleItem (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:261:32)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:223:11)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:189:28
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:113:33
+      at step (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:287:14)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:223:11)
+7:17:11 PM [vite] Internal server error: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter1.tsx: Missing semicolon. (14:121)
+
+  12 |         </p>
+  13 |         <p className="indent-8 mb-4">
+> 14 |             在一个典型的分布式系统中，一个业务请求可能会经过网关、认证服务、业务服务、数据库中间件等多个节点的处理。日志文件分散在不同的服务器节点和容器中。如果系统出现故障，传统的运维方式需要技术人员分别登录到各台服务器，使用 `grep`、`awk` 等命令逐个查看日志文件。这种方式存在以下显著痛点：
+     |                                                                                                                          ^
+  15 |         </p>
+  16 |         <p className="indent-8 mb-4">
+  17 |             1. <strong>效率低下：</strong> 当服务节点达到数十上百个时，逐一排查几乎是不可能的任务，严重影响故障恢复时间（MTTR）。在紧急故障发生时，每一分钟的延迟都可能带来巨大的经济损失。
+  Plugin: vite:react-babel
+  File: /Users/a136/Downloads/loganalysisthesisgen (2)/components/ThesisChapter1.tsx:14:121
+  12 |          </p>
+  13 |          <p className="indent-8 mb-4">
+  14 |              在一个典型的分布式系统中，一个业务请求可能会经过网关、认证服务、业务服务、数据库中间件等多个节点的处理。日志文件分散在不同的服务器节点和容器中。如果系统出现故障，传统的运维方式需要技术人员分别登录到各台服务器，使用 `grep`、`awk` 等命令逐个查看日志文件。这种方式存在以下显著痛点：
+     |                                                                                                                           ^
+  15 |          </p>
+  16 |          <p className="indent-8 mb-4">
+      at constructor (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.semicolon (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:6920:10)
+      at TypeScriptParserMixin.parseExpressionStatement (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13361:10)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12975:19)
+      at TypeScriptParserMixin.parseStatementContent (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseModuleItem (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:261:32)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:223:11)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:189:28
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:113:33
+      at step (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:287:14)
+      at /Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/a136/Downloads/loganalysisthesisgen (2)/node_modules/gensync/index.js:223:11)
+7:17:26 PM [vite] (client) hmr update /components/ThesisChapter1.tsx
+7:17:38 PM [vite] (client) hmr update /components/ThesisChapter2.tsx
+7:17:59 PM [vite] (client) hmr update /components/ThesisChapter3.tsx
+7:18:05 PM [vite] (client) hmr update /components/ThesisChapter4.tsx
+7:18:22 PM [vite] (client) hmr update /components/ThesisChapter5.tsx
+7:21:17 PM [vite] (client) hmr update /components/ThesisChapter2.tsx
+7:21:19 PM [vite] (client) hmr update /components/ThesisChapter3.tsx
+7:22:06 PM [vite] (client) hmr update /components/ThesisChapter5.tsx
+7:22:17 PM [vite] (client) hmr update /App.tsx
+7:28:17 PM [vite] (client) hmr update /App.tsx
+7:31:45 PM [vite] (client) hmr update /App.tsx

@@ -1,0 +1,129 @@
+.container {
+  height: 100vh;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ffffff 0%, #f6ffed 100%);
+  border-right: 1px solid #d9f7be;
+  box-shadow: 2px 0 8px rgba(82, 196, 26, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 2px solid #52c41a;
+  margin: 0 1rem;
+}
+
+.logoIcon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #52c41a 0%, #73d13d 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(82, 196, 26, 0.3);
+}
+
+.logoText {
+  margin-left: 1rem;
+}
+
+.logoTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #262626;
+  letter-spacing: 0.5px;
+}
+
+.logoSubtitle {
+  font-size: 0.75rem;
+  color: #52c41a;
+  font-weight: 500;
+}
+
+.menu {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+  flex: 1;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #595959;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+}
+
+.item:hover {
+  background: #f6ffed;
+  color: #52c41a;
+  transform: translateX(4px);
+}
+
+.item svg {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+}
+
+.menuLabel {
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.userInfo {
+  margin-top: auto;
+  padding: 1.5rem;
+  border-top: 1px solid #d9f7be;
+  background: #f6ffed;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userAvatar {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #52c41a 0%, #73d13d 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(82, 196, 26, 0.3);
+}
+
+.userDetails {
+  flex: 1;
+}
+
+.userName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #262626;
+}
+
+.userRole {
+  font-size: 0.8rem;
+  color: #52c41a;
+  margin-top: 0.2rem;
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#1a1a2e"/>
+  <text x="20" y="30" fill="#00ff00" font-family="monospace" font-size="14">┌──(kali㉿kali)-[~]</text>
+  <text x="20" y="50" fill="#00ff00" font-family="monospace" font-size="14">└─$ nmap -sV -sC -Pn 192.168.6.208</text>
+  <text x="20" y="80" fill="#00ff00" font-family="monospace" font-size="14">Starting Nmap 7.94 ( https://nmap.org )</text>
+  <text x="20" y="110" fill="#00ff00" font-family="monospace" font-size="14">Nmap scan report for 192.168.6.208</text>
+  <text x="20" y="130" fill="#00ff00" font-family="monospace" font-size="14">Host is up (0.0015s latency).</text>
+  <text x="20" y="160" fill="#00ff00" font-family="monospace" font-size="14">PORT     STATE SERVICE VERSION</text>
+  <text x="20" y="180" fill="#00ff00" font-family="monospace" font-size="14">22/tcp   open  ssh     OpenSSH 7.4</text>
+  <text x="20" y="200" fill="#00ff00" font-family="monospace" font-size="14">80/tcp   open  http    Apache httpd 2.4.6 ((CentOS) PHP/7.2.34)</text>
+  <text x="20" y="220" fill="#00ff00" font-family="monospace" font-size="14">3306/tcp open  mysql   MariaDB (unauthorized)</text>
+  <text x="20" y="240" fill="#ff6b6b" font-family="monospace" font-size="14">6379/tcp open  redis   Redis 7.0.2</text>
+  <text x="20" y="280" fill="#00ff00" font-family="monospace" font-size="14">Service detection performed.</text>
+  <text x="20" y="300" fill="#00ff00" font-family="monospace" font-size="14">Nmap done: 1 IP address (1 host up) scanned in 6.91 seconds</text>
+</svg>

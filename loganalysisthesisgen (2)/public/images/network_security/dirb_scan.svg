@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <rect width="800" height="350" fill="#1a1a2e"/>
+  <text x="20" y="30" fill="#00ff00" font-family="monospace" font-size="14">┌──(kali㉿kali)-[~]</text>
+  <text x="20" y="50" fill="#00ff00" font-family="monospace" font-size="14">└─$ dirb http://192.168.6.208/ /usr/share/wordlists/dirb/common.txt</text>
+  <text x="20" y="90" fill="#00ff00" font-family="monospace" font-size="14">-----------------</text>
+  <text x="20" y="110" fill="#00ff00" font-family="monospace" font-size="14">DIRB v2.22</text>
+  <text x="20" y="130" fill="#00ff00" font-family="monospace" font-size="14">By The Dark Raver</text>
+  <text x="20" y="150" fill="#00ff00" font-family="monospace" font-size="14">-----------------</text>
+  <text x="20" y="180" fill="#00ff00" font-family="monospace" font-size="14">URL_BASE: http://192.168.6.208/</text>
+  <text x="20" y="210" fill="#00ff00" font-family="monospace" font-size="14">---- Scanning URL: http://192.168.6.208/ ----</text>
+  <text x="20" y="240" fill="#ffff00" font-family="monospace" font-size="14">+ http://192.168.6.208/cgi-bin/ (CODE:403|SIZE:299)</text>
+  <text x="20" y="260" fill="#ff6b6b" font-family="monospace" font-size="14">+ http://192.168.6.208/phpinfo.php (CODE:200|SIZE:79873)</text>
+  <text x="20" y="300" fill="#00ff00" font-family="monospace" font-size="14">DOWNLOADED: 4612 - FOUND: 2</text>
+</svg>

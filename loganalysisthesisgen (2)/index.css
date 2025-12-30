@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom print styles if needed */
+@media print {
+  @page {
+    margin: 20mm;
+  }
+}

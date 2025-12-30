@@ -1,0 +1,5 @@
+{
+  "name": "HadoopOpsThesisGen",
+  "description": "A React application that generates a standard undergraduate thesis for a Hadoop Automated Operation and Maintenance Management System, featuring architecture diagrams and Word export.",
+  "requestFramePermissions": []
+}

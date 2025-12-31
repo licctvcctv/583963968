@@ -1,0 +1,5 @@
+{
+  "name": "Industrial Big Data Report Gen",
+  "description": "A React application to generate varied Industrial Big Data Analysis reports based on real datasets.",
+  "requestFramePermissions": []
+}

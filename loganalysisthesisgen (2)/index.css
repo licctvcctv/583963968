@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 隐藏终端滚动条 */
+.capture-as-image,
+.capture-as-image *,
+.capture-as-image > div,
+.capture-as-image div {
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important; /* IE/Edge */
+}
+
+.capture-as-image::-webkit-scrollbar,
+.capture-as-image *::-webkit-scrollbar,
+.capture-as-image > div::-webkit-scrollbar,
+.capture-as-image div::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
 /* Custom print styles if needed */
 @media print {
   @page {

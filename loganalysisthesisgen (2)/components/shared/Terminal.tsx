@@ -192,10 +192,10 @@ const UbuntuDesktopStyle: React.FC<TerminalProps> = ({
                 <div className="px-3 py-1 hover:bg-[#484848] rounded cursor-pointer transition-colors">Help</div>
             </div>
 
-            {/* 3. 终端内容区 - 经典 Ubuntu 紫 (#300a24) + 滚动条轨道 */}
-            <div className="flex bg-[#300a24] min-h-[150px] relative">
+            {/* 3. 终端内容区 - 经典 Ubuntu 紫 (#300a24) */}
+            <div className="bg-[#300a24] min-h-[150px] overflow-hidden">
                 {/* 文本内容 */}
-                <div className="flex-1 p-3 text-white font-mono leading-relaxed text-sm overflow-x-auto selection:bg-[#E95420] selection:text-white pb-6">
+                <div className="p-3 text-white font-mono leading-relaxed text-sm selection:bg-[#E95420] selection:text-white pb-6" style={{overflow: 'hidden'}}>
                     {command && (
                         <div className="flex flex-wrap items-center break-all mb-1">
                             {/* Prompt: user@host (bold green) : path (bold blue) $ (white) */}
@@ -215,11 +215,6 @@ const UbuntuDesktopStyle: React.FC<TerminalProps> = ({
 
                     {/* Blinking Block Cursor (Classic Terminal) */}
                     <div className="mt-1 inline-block w-2.5 h-4 bg-white animate-pulse align-text-bottom ml-0.5"></div>
-                </div>
-
-                {/* 模拟右侧滚动条 (Overlay Scrollbar style) */}
-                <div className="w-3 bg-[#300a24] border-l border-white/5 flex flex-col justify-between py-1 items-center opacity-80 hover:opacity-100 transition-opacity">
-                    <div className="w-1.5 h-1/3 bg-[#5e5e5e] rounded-full hover:bg-[#888888] cursor-pointer"></div>
                 </div>
             </div>
         </div>

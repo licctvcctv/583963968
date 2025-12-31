@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  student-2-system-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.backend
+    container_name: student-2-system-backend
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+      - PORT=8002
+    restart: unless-stopped
+
+  student-2-system-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: student-2-system-frontend
+    ports:
+      - "3002:80"
+    environment:
+      - VITE_API_URL=http://localhost:8002
+    depends_on:
+      - student-2-system-backend
+    restart: unless-stopped

@@ -1,0 +1,51 @@
+.container {
+  height: 100vh;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #001529 0%, #000c17 100%);
+  border-right: 1px solid rgba(24, 144, 255, 0.2);
+  padding: 0;
+}
+
+.logo {
+  width: 55%;
+  max-width: 5rem;
+  border-radius: 30%;
+}
+
+.menu {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.item:hover {
+  background: rgba(24, 144, 255, 0.15);
+  color: #1890ff;
+  transform: translateX(4px);
+}
+
+.item > svg,
+.item > span {
+  fill: currentColor;
+  color: currentColor;
+  width: 24px;
+  height: 24px;
+}

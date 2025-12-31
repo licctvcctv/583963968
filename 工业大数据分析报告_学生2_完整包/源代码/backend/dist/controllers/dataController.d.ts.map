@@ -1,0 +1,1 @@
+{"version":3,"file":"dataController.d.ts","sourceRoot":"","sources":["../../src/controllers/dataController.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAK5C,eAAO,MAAM,OAAO,GAAI,KAAK,OAAO,EAAE,KAAK,QAAQ,SAOlD,CAAC;AAEF,eAAO,MAAM,kBAAkB,GAAI,KAAK,OAAO,EAAE,KAAK,QAAQ,SAO7D,CAAC;AAEF,eAAO,MAAM,eAAe,GAAI,KAAK,OAAO,EAAE,KAAK,QAAQ,SAO1D,CAAC"}

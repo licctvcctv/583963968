@@ -1,5 +1,6 @@
 
 import React, { useRef, useState, useEffect } from 'react';
+import ReactDOM from 'react-dom/client';
 import { Download, Layout, Printer, Share2, FileText, AlignLeft, RefreshCw } from 'lucide-react';
 import ThesisDocument from './components/ThesisDocument';
 import { NetworkSecurityAssignment } from './components/NetworkSecurityAssignment';
@@ -7,9 +8,10 @@ import { MalwareAnalysisAssignment } from './components/MalwareAnalysisAssignmen
 import { SecurityLab3Assignment } from './components/SecurityLab3Assignment';
 import { SecurityLab4Assignment } from './components/SecurityLab4Assignment';
 import { UbuntuExperience } from './components/security/UbuntuExperience';
+import { IndustrialBigDataAssignment } from './components/IndustrialBigDataAssignment';
 import { exportToWord } from './utils/exportUtils';
 
-type ReportType = 'network' | 'malware' | 'lab3' | 'lab4' | 'ubuntu';
+type ReportType = 'network' | 'malware' | 'lab3' | 'lab4' | 'ubuntu' | 'industrial-big-data';
 
 const App: React.FC = () => {
   const reportRef = useRef<HTMLDivElement>(null);
@@ -17,6 +19,7 @@ const App: React.FC = () => {
   const [isExporting, setIsExporting] = useState(false);
   const [wordCount, setWordCount] = useState(0);
   const [reportType, setReportType] = useState<ReportType>('ubuntu');
+  const [studentVariant, setStudentVariant] = useState<number>(1);
 
   // Calculate word count on mount and update
   useEffect(() => {
@@ -47,6 +50,48 @@ const App: React.FC = () => {
       } finally {
         setIsExporting(false);
       }
+    }
+  };
+
+  const handleBatchExport = async () => {
+    if (isExporting) return;
+    setIsExporting(true);
+
+    try {
+      // Import the component dynamically for each student variant
+      const { IndustrialBigDataAssignment } = await import('./components/IndustrialBigDataAssignment');
+      const { exportToWord } = await import('./utils/exportUtils');
+
+      // Create a temporary container for each student
+      for (let i = 1; i <= 4; i++) {
+        const tempDiv = document.createElement('div');
+        tempDiv.style.position = 'absolute';
+        tempDiv.style.left = '-9999px';
+        document.body.appendChild(tempDiv);
+
+        // Render the component for this student
+        const root = ReactDOM.createRoot(tempDiv);
+        root.render(
+          React.createElement(IndustrialBigDataAssignment, { variantId: i })
+        );
+
+        // Wait for render to complete
+        await new Promise(resolve => setTimeout(resolve, 500));
+
+        // Export this student's report
+        const fileName = `工业大数据分析报告_学生${i}_${new Date().toISOString().slice(0, 10)}.docx`;
+        await exportToWord(tempDiv, fileName);
+
+        // Clean up
+        root.unmount();
+        document.body.removeChild(tempDiv);
+      }
+
+      console.log('Batch export completed!');
+    } catch (e) {
+      console.error('Batch export failed:', e);
+    } finally {
+      setIsExporting(false);
     }
   };
 
@@ -117,12 +162,24 @@ const App: React.FC = () => {
     { id: 'lab4-summary', label: '十三、实验总结' },
   ];
 
+  const industrialNavItems = [
+    { id: 'ibda-cover', label: '封面' },
+    { id: 'ibda-section1', label: '一、项目背景' },
+    { id: 'ibda-section2', label: '二、需求分析' },
+    { id: 'ibda-section3', label: '三、数据库设计' },
+    { id: 'ibda-section4', label: '四、详细设计' },
+    { id: 'ibda-section5', label: '五、系统实现' },
+    { id: 'ibda-section6', label: '六、运行效果' },
+    { id: 'ibda-section7', label: '七、测试分析' },
+  ];
+
   const getNavItems = () => {
     switch (reportType) {
       case 'network': return networkNavItems;
       case 'malware': return malwareNavItems;
       case 'lab3': return lab3NavItems;
       case 'lab4': return lab4NavItems;
+      case 'industrial-big-data': return industrialNavItems;
       case 'ubuntu': return [{ id: 'ubuntu-preview-page', label: 'Ubuntu 风格预览' }];
     }
   };
@@ -135,6 +192,7 @@ const App: React.FC = () => {
       case 'malware': return '题目二：恶意流量分析与逆向';
       case 'lab3': return '实验三：ShellCode与函数调用';
       case 'lab4': return '实验四：二进制漏洞挖掘';
+      case 'industrial-big-data': return '工业大数据分析与应用';
       case 'ubuntu': return 'Ubuntu 风格体验馆';
     }
   };
@@ -145,6 +203,7 @@ const App: React.FC = () => {
       case 'malware': return '网络安全_题目二_恶意流量分析';
       case 'lab3': return '逆向工程_实验三_ShellCode与函数调用';
       case 'lab4': return '逆向工程_实验四_二进制漏洞挖掘';
+      case 'industrial-big-data': return '工业大数据_课程大作业_预测性维护';
       case 'ubuntu': return 'Ubuntu_风格预览';
     }
   };
@@ -187,12 +246,48 @@ const App: React.FC = () => {
               题目二
             </button>
             <button
+              onClick={() => setReportType('industrial-big-data')}
+              className={`text-xs py-1 px-2 rounded col-span-2 ${reportType === 'industrial-big-data' ? 'bg-blue-600 text-white' : 'bg-slate-700 text-slate-300'}`}
+            >
+              工业大数据
+            </button>
+            <button
               onClick={() => setReportType('ubuntu')}
               className={`text-xs py-1 px-2 rounded col-span-2 ${reportType === 'ubuntu' ? 'bg-purple-600 text-white' : 'bg-slate-700 text-slate-300'}`}
             >
-              ★ Ubuntu 体验
+              Ubuntu 体验
             </button>
           </div>
+          {/* 学生切换器 - 仅在工业大数据模式下显示 */}
+          {reportType === 'industrial-big-data' && (
+            <div className="mt-3 p-2 bg-slate-900 rounded border border-slate-700">
+              <div className="text-xs text-slate-400 mb-2">选择学生报告:</div>
+              <div className="grid grid-cols-4 gap-1">
+                {[1, 2, 3, 4].map((v) => (
+                  <button
+                    key={v}
+                    onClick={() => setStudentVariant(v)}
+                    className={`text-xs py-1 px-2 rounded ${studentVariant === v ? 'bg-blue-500 text-white' : 'bg-slate-700 text-slate-300'}`}
+                  >
+                    学生{v}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+          {/* 批量导出按钮 - 仅在工业大数据模式下显示 */}
+          {reportType === 'industrial-big-data' && (
+            <div className="mt-2">
+              <button
+                onClick={handleBatchExport}
+                disabled={isExporting}
+                className={`w-full flex items-center justify-center gap-2 text-white px-3 py-2 rounded shadow transition-all active:scale-95 text-xs font-bold ${isExporting ? 'bg-purple-800 cursor-wait' : 'bg-purple-600 hover:bg-purple-500'}`}
+              >
+                <Download className="w-3 h-3" />
+                {isExporting ? '批量生成中...' : '一键导出4份学生报告'}
+              </button>
+            </div>
+          )}
           <div className="mt-4 flex items-center gap-2 text-xs bg-slate-900 p-2 rounded border border-slate-700">
             <AlignLeft className="w-3 h-3 text-gray-400" />
             <span className="text-gray-300">中文字数: </span>
@@ -242,6 +337,7 @@ const App: React.FC = () => {
           {reportType === 'malware' && <MalwareAnalysisAssignment />}
           {reportType === 'lab3' && <SecurityLab3Assignment />}
           {reportType === 'lab4' && <SecurityLab4Assignment />}
+          {reportType === 'industrial-big-data' && <IndustrialBigDataAssignment variantId={studentVariant} />}
           {reportType === 'ubuntu' && <UbuntuExperience />}
         </div>
       </main>
